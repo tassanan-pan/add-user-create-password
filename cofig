@@ -1,0 +1,11 @@
+[root@localhost home]# ls
+[root@localhost home]# useradd Deena
+[root@localhost home]# ls
+[root@localhost home]# sudo passwd Deena
+[root@localhost home]# cat /etc/passwd | grep Deena
+
+บังคับให้มีการเปลี่ยน password ครั้งแรกตอน login 
+[root@localhost home]# passwd --expire Deena
+[root@localhost home]# sudo chage -l Deena
+
+  
